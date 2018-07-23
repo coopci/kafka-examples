@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb0889d7-9643-479a-9c2d-8ceebd836c2f" name="Default" comment="" />
+    <list default="true" id="cb0889d7-9643-479a-9c2d-8ceebd836c2f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/FilenameComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollingLogManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/apache/kafka/connect/rollinglog/RollingLogManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollinglogSourceTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollinglogSourceTask.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,71 +20,93 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="connect-rollingfile-source.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/connect-rollingfile-source.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state relative-caret-position="285">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectStandalone.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConnectStandalone.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/cli/ConnectStandalone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+            <state relative-caret-position="459">
+              <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2040#2056#0" expanded="true" />
-                <element signature="e#3013#3044#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Connect.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/connect-runtime/0.11.0.3/connect-runtime-0.11.0.3.jar!/org/apache/kafka/connect/runtime/Connect.class">
+      <file leaf-file-name="Connect.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/connect-runtime/0.11.0.3/connect-runtime-0.11.0.3-sources.jar!/org/apache/kafka/connect/runtime/Connect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+            <state relative-caret-position="225">
+              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileStreamSourceTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTask.java">
+      <file leaf-file-name="RollinglogSourceConnector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollinglogSourceConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-252">
-              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+            <state relative-caret-position="361">
+              <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileStreamSinkTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSinkTask.java">
+      <file leaf-file-name="RollinglogSourceTask.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollinglogSourceTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+            <state relative-caret-position="179">
+              <caret line="137" column="20" selection-start-line="137" selection-start-column="12" selection-end-line="137" selection-end-column="20" />
+              <folding>
+                <element signature="method#extractLine#0;class#RollinglogSourceTask#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileStreamSourceConnector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceConnector.java">
+      <file leaf-file-name="RollingLogManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollingLogManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-815">
-              <caret line="40" column="11" lean-forward="true" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+            <state relative-caret-position="405">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileStreamSinkConnector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSinkConnector.java">
+      <file leaf-file-name="FilenameComparator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/FilenameComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="-25">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RollingLogManagerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/kafka/connect/rollinglog/RollingLogManagerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#291#299#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,104 +123,182 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>filename</find>
+      <find>POSITION_FIELD</find>
+      <find>stopLatch</find>
+      <find>logFilename</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/gubo/learn/kafka/connect/GuboFileStreamSourceConnector.java" />
         <option value="$PROJECT_DIR$/src/main/java/file/FileStreamSinkConnector.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceConnector.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTaskMonitorMBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/cli/ConnectStandalone.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTaskMonitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTaskMonitorMBeankk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/FileStreamSourceTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollinglogSourceConnector.java" />
+        <option value="$PROJECT_DIR$/config/connect-rollingfile-source.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollinglogSourceTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/FilenameComparator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/apache/kafka/connect/rollinglog/RollingLogManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollingLogManager.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="284" />
-    <option name="y" value="21" />
-    <option name="width" value="1400" />
-    <option name="height" value="978" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gubo.learn.kafka.connector." type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gubo.learn.kafka.connector." type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1802" />
+    <option name="y" value="-813" />
+    <option name="width" value="1680" />
+    <option name="height" value="973" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
-              <item name="gubolearnkafkaconnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gubolearnkafkaconnector" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-examples" type="58d84e3e:PackageViewProjectNode" />
+              <item name="gubo.learn.kafka.connector." type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
-              <item name="gubolearnkafkaconnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gubolearnkafkaconnector" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-examples" type="58d84e3e:PackageViewProjectNode" />
+              <item name="gubo.learn.kafka.connector." type="616d4139:PackageViewModuleNode" />
+              <item name="org.apache.kafka.connect" type="1f31426a:PackageElementNode" />
             </path>
             <path>
-              <item name="gubolearnkafkaconnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gubolearnkafkaconnector" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-examples" type="58d84e3e:PackageViewProjectNode" />
+              <item name="gubo.learn.kafka.connector." type="616d4139:PackageViewModuleNode" />
+              <item name="org.apache.kafka.connect" type="1f31426a:PackageElementNode" />
+              <item name="file" type="1f31426a:PackageElementNode" />
             </path>
             <path>
-              <item name="gubolearnkafkaconnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gubolearnkafkaconnector" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gubolearnkafkaconnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gubolearnkafkaconnector" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="connect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gubolearnkafkaconnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gubolearnkafkaconnector" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="connect" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gubolearnkafkaconnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gubolearnkafkaconnector" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="connect" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gubolearnkafkaconnector" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="kafka-examples" type="58d84e3e:PackageViewProjectNode" />
+              <item name="gubo.learn.kafka.connector." type="616d4139:PackageViewModuleNode" />
+              <item name="org.apache.kafka.connect" type="1f31426a:PackageElementNode" />
+              <item name="rollinglog" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kafka-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="connect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="connect" type="462c0819:PsiDirectoryNode" />
+              <item name="rollinglog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rollinglog" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Files&#9;FILE&#9;file://C:/Users/cooper/IdeaProjects/gubolearnkafkaconnector/src/main/java/file/FileStreamSourceConnector.java&#10;pom&#9;FILE&#9;file://C:/Users/cooper/IdeaProjects/gubolearnkafkaconnector/pom.xml" />
-    <property name="last_opened_file_path" value="E:/src/kafka" />
+    <property name="SearchEverywhereHistoryKey" value="Stre&#9;FILE&#9;file:///Users/bgu/src/kafka-examples/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTask.java&#10;Files&#9;FILE&#9;file://C:/Users/cooper/IdeaProjects/gubolearnkafkaconnector/src/main/java/file/FileStreamSourceConnector.java&#10;pom&#9;FILE&#9;file://C:/Users/cooper/IdeaProjects/gubolearnkafkaconnector/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.apache.kafka.connect.file" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog" />
       <recent name="C:\Users\cooper\IdeaProjects\gubolearnkafkaconnector\src\main\java" />
     </key>
   </component>
@@ -206,11 +314,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.org.apache.kafka.connect.rollinglog in gubo.learn.kafka.connector.">
     <configuration name="ConnectStandalone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.apache.kafka.connect.cli.ConnectStandalone" />
-      <module name="gubolearnkafkaconnector" />
-      <option name="PROGRAM_PARAMETERS" value="config\connect-standalone.properties config\connect-file-source.properties" />
+      <module name="gubo.learn.kafka.connector." />
+      <option name="PROGRAM_PARAMETERS" value="config/connect-standalone.properties config/connect-rollingfile-source.properties" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -222,6 +330,46 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
+    <configuration name="All in gubo.learn.kafka.connector." type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gubo.learn.kafka.connector." />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RollingLogManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gubo.learn.kafka.connector." />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.kafka.connect.rollinglog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.apache.kafka.connect.rollinglog" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.kafka.connect.rollinglog.RollingLogManagerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -229,6 +377,29 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="org.apache.kafka.connect.rollinglog in gubo.learn.kafka.connector." type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gubo.learn.kafka.connector." />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.apache.kafka.connect.rollinglog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.apache.kafka.connect.rollinglog" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -260,8 +431,17 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.ConnectStandalone" />
+      <item itemvalue="JUnit.RollingLogManagerTest" />
+      <item itemvalue="JUnit.All in gubo.learn.kafka.connector." />
+      <item itemvalue="JUnit.org.apache.kafka.connect.rollinglog in gubo.learn.kafka.connector." />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.org.apache.kafka.connect.rollinglog in gubo.learn.kafka.connector." />
+        <item itemvalue="JUnit.All in gubo.learn.kafka.connector." />
+        <item itemvalue="JUnit.RollingLogManagerTest" />
         <item itemvalue="Application.ConnectStandalone" />
       </list>
     </recent_temporary>
@@ -279,34 +459,66 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="RollingLogManagerTest - 2018.07.23 at 17h 24m 10s.xml">
+      <configuration name="RollingLogManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_gubo_learn_kafka_connector_ - 2018.07.23 at 17h 24m 25s.xml">
+      <configuration name="All in gubo.learn.kafka.connector." configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_gubo_learn_kafka_connector_ - 2018.07.23 at 17h 28m 25s.xml">
+      <configuration name="All in gubo.learn.kafka.connector." configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RollingLogManagerTest - 2018.07.23 at 17h 29m 32s.xml">
+      <configuration name="RollingLogManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RollingLogManagerTest - 2018.07.23 at 17h 30m 51s.xml">
+      <configuration name="RollingLogManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_gubo_learn_kafka_connector_ - 2018.07.23 at 17h 31m 21s.xml">
+      <configuration name="All in gubo.learn.kafka.connector." configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_gubo_learn_kafka_connector_ - 2018.07.23 at 17h 32m 34s.xml">
+      <configuration name="All in gubo.learn.kafka.connector." configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_gubo_learn_kafka_connector_ - 2018.07.23 at 17h 32m 50s.xml">
+      <configuration name="All in gubo.learn.kafka.connector." configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="org_apache_kafka_connect_rollinglog_in_gubo_learn_kafka_connector_ - 2018.07.23 at 17h 36m 42s.xml">
+      <configuration name="org.apache.kafka.connect.rollinglog in gubo.learn.kafka.connector." configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="org_apache_kafka_connect_rollinglog_in_gubo_learn_kafka_connector_ - 2018.07.23 at 17h 37m 41s.xml">
+      <configuration name="org.apache.kafka.connect.rollinglog in gubo.learn.kafka.connector." configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="-5" width="1930" height="1028" extended-state="6" />
+    <frame x="1802" y="-813" width="1680" height="973" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" id="Messages" weight="0.32992035" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3170189" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.32992035" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.13988096" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.31256953" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.71707314" visible="true" weight="0.2046875" />
-      <window_info id="Structure" order="6" sideWeight="0.28292683" side_tool="true" visible="true" weight="0.2046875" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.7152104" visible="true" weight="0.22738095" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32925472" />
+      <window_info id="Structure" order="6" sideWeight="0.28478965" side_tool="true" visible="true" weight="0.22738095" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="6" visible="true" weight="0.3003413" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.3214683" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="3" />
     </layout>
@@ -335,101 +547,278 @@
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTask.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTask.java</url>
+          <line>190</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/apache/kafka/connect/rollinglog/RollingLogManagerTest.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/connect-runtime/0.11.0.3/connect-runtime-0.11.0.3.jar!/org/apache/kafka/connect/util/ConnectUtils.class">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="3439" column="26" selection-start-line="3439" selection-start-column="26" selection-end-line="3439" selection-end-column="26" />
-          <folding>
-            <element signature="e#157612#157642#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSinkConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSinkTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
+        <state relative-caret-position="150">
           <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gubo/learn/kafka/connect/GuboFileStreamSourceConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#1812#1833#0" expanded="true" />
-            <element signature="e#1912#1928#0" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
-            <element signature="e#2025#2026#0" expanded="true" />
+            <element signature="e#2055#2056#0" expanded="true" />
+            <element signature="e#2081#2082#0" expanded="true" />
+            <element signature="e#2126#2127#0" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
+            <element signature="e#8457#8458#0" expanded="true" />
+            <element signature="e#8525#8526#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.11.0.3/kafka-clients-0.11.0.3.jar!/org/apache/kafka/common/config/ConfigDef.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSinkTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceConnector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-815">
+        <state relative-caret-position="210">
           <caret line="40" column="11" lean-forward="true" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/connect-runtime/0.11.0.3/connect-runtime-0.11.0.3.jar!/org/apache/kafka/connect/runtime/Connect.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSinkConnector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="135">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/cli/ConnectStandalone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="1005">
           <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2040#2056#0" expanded="true" />
-            <element signature="e#3013#3044#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/connect-runtime/0.11.0.3/connect-runtime-0.11.0.3.jar!/org/apache/kafka/connect/util/ConnectUtils.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Arrays.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSinkConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gubo/learn/kafka/connect/GuboFileStreamSourceConnector.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.11.0.3/kafka-clients-0.11.0.3.jar!/org/apache/kafka/common/config/ConfigDef.class" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSinkTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/javax/management/MBeanServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="372" column="26" selection-start-line="372" selection-start-column="26" selection-end-line="372" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTaskMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTaskMonitorMBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTaskMBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollinglogSourceTaskMBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/file/FileStreamSourceTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2055#2056#0" expanded="true" />
+            <element signature="e#2081#2082#0" expanded="true" />
+            <element signature="e#2126#2127#0" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
+            <element signature="e#8457#8458#0" expanded="true" />
+            <element signature="e#8525#8526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/connect-rollingfile-source.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicBoolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="136" column="49" selection-start-line="136" selection-start-column="49" selection-end-line="136" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/cli/ConnectStandalone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/connect-runtime/0.11.0.3/connect-runtime-0.11.0.3.jar!/org/apache/kafka/connect/runtime/Connect.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/connect-runtime/0.11.0.3/connect-runtime-0.11.0.3-sources.jar!/org/apache/kafka/connect/runtime/Connect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="173" column="27" selection-start-line="173" selection-start-column="27" selection-end-line="173" selection-end-column="27" />
+          <folding>
+            <element signature="e#7284#7285#0" expanded="true" />
+            <element signature="e#7312#7313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollinglogSourceConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollinglogSourceTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="137" column="20" selection-start-line="137" selection-start-column="12" selection-end-line="137" selection-end-column="20" />
+          <folding>
+            <element signature="method#extractLine#0;class#RollinglogSourceTask#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="121" column="73" lean-forward="true" selection-start-line="121" selection-start-column="73" selection-end-line="121" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/FilenameComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/kafka/connect/rollinglog/RollingLogManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#291#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/kafka/connect/rollinglog/RollingLogManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -486,7 +875,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>gubolearnkafkaconnector</last-edited>
+          <last-edited>gubo.learn.kafka.connector.</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
