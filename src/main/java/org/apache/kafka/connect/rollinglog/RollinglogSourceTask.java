@@ -66,10 +66,9 @@ public class RollinglogSourceTask extends SourceTask implements RollinglogSource
     }
 
 
-    @Override
-    public void start(Map<String, String> props) {
-
+    private void registerMBean() {
         MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+
         ObjectName name = null;
         try {
             name = new ObjectName("com.example:type=RollinglogSourceTask");
@@ -85,6 +84,29 @@ public class RollinglogSourceTask extends SourceTask implements RollinglogSource
         } catch (MBeanRegistrationException e) {
             e.printStackTrace();
         }
+    }
+
+    private void unregisterMBean() {
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+
+        ObjectName name = null;
+        try {
+            name = new ObjectName("com.example:type=RollinglogSourceTask");
+
+            mbs.unregisterMBean(name);
+
+        } catch (MalformedObjectNameException e) {
+            e.printStackTrace();
+        } catch (MBeanRegistrationException e) {
+            e.printStackTrace();
+        } catch (InstanceNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+    @Override
+    public void start(Map<String, String> props) {
+
+        this.registerMBean();
 
 
         filename = props.get(RollinglogSourceConnector.FILE_CONFIG);
@@ -258,6 +280,7 @@ public class RollinglogSourceTask extends SourceTask implements RollinglogSource
             } catch (IOException e) {
                 log.error("Failed to close RollinglogSourceTask stream: ", e);
             }
+            this.unregisterMBean();
             this.notify();
         }
     }
