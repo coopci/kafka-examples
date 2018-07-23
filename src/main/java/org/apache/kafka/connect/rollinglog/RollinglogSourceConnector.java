@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.kafka.connect.file;
+package org.apache.kafka.connect.rollinglog;
 
 import org.apache.kafka.common.config.ConfigDef;
 import org.apache.kafka.common.config.ConfigDef.Importance;
@@ -33,7 +33,7 @@ import java.util.Map;
  * Very simple connector that works with the console. This connector supports both source and
  * sink modes via its 'mode' setting.
  */
-public class FileStreamSourceConnector extends SourceConnector {
+public class RollinglogSourceConnector extends SourceConnector {
     public static final String TOPIC_CONFIG = "topic";
     public static final String FILE_CONFIG = "file";
 
@@ -61,7 +61,7 @@ public class FileStreamSourceConnector extends SourceConnector {
 
     @Override
     public Class<? extends Task> taskClass() {
-        return FileStreamSourceTask.class;
+        return RollinglogSourceTask.class;
     }
 
     @Override

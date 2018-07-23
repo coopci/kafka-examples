@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.kafka.connect.file;
+package org.apache.kafka.connect.rollinglog;
 
 import org.apache.kafka.connect.data.Schema;
 import org.apache.kafka.connect.errors.ConnectException;
@@ -35,8 +35,8 @@ import java.util.Map;
 /**
  * RollinglogSourceTask reads from stdin or a file.
  */
-public class FileStreamSourceTask extends SourceTask implements FileStreamSourceTaskMBean {
-    private static final Logger log = LoggerFactory.getLogger(FileStreamSourceTask.class);
+public class RollinglogSourceTask extends SourceTask implements RollinglogSourceTaskMBean {
+    private static final Logger log = LoggerFactory.getLogger(RollinglogSourceTask.class);
     public static final String FILENAME_FIELD = "filename";
     public  static final String POSITION_FIELD = "position";
     private static final Schema VALUE_SCHEMA = Schema.STRING_SCHEMA;
@@ -62,7 +62,7 @@ public class FileStreamSourceTask extends SourceTask implements FileStreamSource
 
     @Override
     public String version() {
-        return new FileStreamSourceConnector().version();
+        return new RollinglogSourceConnector().version();
     }
 
 
@@ -87,14 +87,14 @@ public class FileStreamSourceTask extends SourceTask implements FileStreamSource
         }
 
 
-        filename = props.get(FileStreamSourceConnector.FILE_CONFIG);
+        filename = props.get(RollinglogSourceConnector.FILE_CONFIG);
         if (filename == null || filename.isEmpty()) {
             stream = System.in;
             // Tracking offset for stdin doesn't make sense
             streamOffset = null;
             reader = new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8));
         }
-        topic = props.get(FileStreamSourceConnector.TOPIC_CONFIG);
+        topic = props.get(RollinglogSourceConnector.TOPIC_CONFIG);
         if (topic == null)
             throw new ConnectException("RollinglogSourceTask config missing topic setting");
     }

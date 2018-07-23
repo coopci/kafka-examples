@@ -38,7 +38,7 @@ import java.util.Map;
 public class ConnectStandalone {
     private static final Logger log = LoggerFactory.getLogger(ConnectStandalone.class);
 
-    // run with
+    // run with config/connect-standalone.properties config/connect-file-source.properties
     //
     public static void main(String[] args) throws Exception {
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
