@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.LinkedList;
 
 import static org.junit.Assert.assertEquals;
@@ -16,12 +17,7 @@ public class RollingLogManagerTest {
     public TemporaryFolder folder= new TemporaryFolder();
 
     @Test
-    public void testFindNext(){
-
-
-        File temproot= folder.getRoot();
-        System.out.println("temproot: " + temproot.getAbsolutePath());
-
+    public void testFindNext() {
 
         RollingLogManager mgr = new RollingLogManager();
 
@@ -53,11 +49,39 @@ public class RollingLogManagerTest {
     }
 
     @Test
-    public void testFindNext2(){
+    public void testFindNextInFolder() throws IOException {
 
-
-        File temproot= folder.getRoot();
+        File temproot = folder.getRoot();
         System.out.println("temproot: " + temproot.getAbsolutePath());
 
+        folder.newFile("tracing-log-134.1.log");
+        folder.newFile("tracing-log-1234.log");
+        folder.newFile("tracing1-log-934.log");
+
+
+        RollingLogManager mgr = new RollingLogManager();
+
+        String pattern = "tracing-log-*.log";
+        String lastFile = "tracing-log-234.log";
+
+        // normal case
+        String found = mgr.findNext(temproot.getPath(), pattern, lastFile);
+        assertEquals("tracing-log-1234.log", found);
+
+
+        // lastFile not exists
+        String found1 = mgr.findNext(temproot.getAbsolutePath(), pattern, null);
+        assertEquals("tracing-log-134.1.log", found1);
+
+        String found2 = mgr.findNext(temproot.getAbsolutePath(), pattern, "");
+        assertEquals("tracing-log-134.1.log", found2);
+
+        String found3 = mgr.findNext(temproot.getAbsolutePath(), pattern, "ad");
+        assertEquals("tracing-log-134.1.log", found3);
+
+
+        // lastFile is greatest
+        String found4 = mgr.findNext(temproot.getAbsolutePath(), pattern, "tracing-log-1234.log");
+        assertNull(found4);
     }
 }

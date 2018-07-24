@@ -2,6 +2,10 @@ package org.apache.kafka.connect.rollinglog;
 
 import java.io.File;
 import java.io.FilenameFilter;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
+import java.nio.file.PathMatcher;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -21,9 +25,20 @@ public class RollingLogManager {
     String findNext(String dirpath, String pattern, String lastFile) {
 
         File dir = new File(dirpath);
+
+        PathMatcher matcher =
+                FileSystems.getDefault().getPathMatcher("glob:" + pattern);
+
         String[] files = dir.list(new FilenameFilter() {
             public boolean accept(File dir, String name) {
-                return name.toLowerCase().endsWith(".txt");
+
+                Path p = Paths.get(name);
+
+                if (matcher.matches(p)) {
+                    return true;
+                }
+
+                return false;
             }
         });
 
